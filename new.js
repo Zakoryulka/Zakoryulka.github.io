@@ -22,9 +22,11 @@ window.onresize = function(evt) {
         checkControl.style.cssText = 'display: block';
         checkView.style.cssText = 'display: block';
     } 
-    // else {
-    //     openCheckControl();
-    // }
+    else {
+        if (checkControl.style.cssText == 'display: block;' && checkView.style.cssText == 'display: block;') {
+            openCheckControl();
+        }
+    }
 };
 
 showExampleBtn.addEventListener('click', function() {
