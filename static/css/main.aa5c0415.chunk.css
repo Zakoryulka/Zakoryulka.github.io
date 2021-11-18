@@ -678,6 +678,8 @@ textarea.field-input--title {
         flex-wrap: wrap;
     }
     .layout > .check-view {
+        -webkit-order: 2;
+        order: 2;
         display: none;
         z-index: 1;
         position: relative;
@@ -701,6 +703,8 @@ textarea.field-input--title {
         cursor: pointer;
     }
     .layout > .check-control {
+        -webkit-order: -1;
+        order: -1;
         z-index: 1;
         position: relative;
         padding: 30px 20px 60px 20px;

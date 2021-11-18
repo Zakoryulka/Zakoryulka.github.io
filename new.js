@@ -21,9 +21,10 @@ window.onresize = function(evt) {
     if (document.documentElement.clientWidth > 767) {
         checkControl.style.cssText = 'display: block';
         checkView.style.cssText = 'display: block';
-    } else {
-        openCheckControl();
-    }
+    } 
+    // else {
+    //     openCheckControl();
+    // }
 };
 
 showExampleBtn.addEventListener('click', function() {
@@ -32,17 +33,4 @@ showExampleBtn.addEventListener('click', function() {
 
 closeBtn.addEventListener('click', function() {
     openCheckControl();
-});
-
-
-showExampleBtn.addEventListener('keydown', function(evt) {
-    if (evt.key == 'Enter') {
-        openCheckView();
-      }
-});
-
-closeBtn.addEventListener('keydown', function(evt) {
-    if (evt.key == 'Enter') {
-        openCheckControl();
-    }
 });
